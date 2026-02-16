@@ -1,0 +1,12 @@
+# Nextflow hidden files
+.nextflow/
+.nextflow.log*
+
+# Execution work directory
+work/
+
+# Pipeline outputs (large files)
+results/
+
+# OS generated files
+.DS_Store

@@ -4,11 +4,10 @@ A portable Nextflow pipeline to automate sequencing data retrieval, quality cont
 
 ## 🚀 Overview
 
-This pipeline streamlines the initial steps of genomics workflows:
-1. **Automated Fetching**: Downloads FASTQ files from NCBI SRA (via Accession ID) or direct URLs.
-2. **Reference Management**: Retrieves Reference Genome (FASTA) and Annotation (GTF) files.
-3. **Quality Check**: Runs FastQC on raw reads.
-4. **Genome Indexing**: Generates a STAR index for downstream alignment.
+This pipeline follows a modular design:
+1. **Data Import (Process 1)**: A unified process that fetches both sequencing reads (SRA/FASTQ) and genomic references (FASTA/GTF) from remote sources.
+2. **Quality Control (Process 2)**: Standard FastQC assessment of the raw reads.
+3. **STAR Indexing (Process 3)**: High-performance generation of the genome index using the files provided by the import step.
 
 ## 🛠 Prerequisites
 
@@ -31,7 +30,7 @@ The only tools you need to have installed locally are:
 Update the values to match your specific study:
 
 ```yaml
-sra_id: "SRR1234567" # Supports SRA Accessions or http/ftp URLs
+sra_id: "SRR12345678" # Supports SRA Accessions or http/ftp URLs
 genome_url: "https://.../genome.fna.gz"
 gtf_url: "https://.../genome.gtf.gz"
 outdir: "results"
@@ -39,7 +38,8 @@ outdir: "results"
 
 ### 2. Resource Tuning (nextflow.config)
 
-The configuration is pre-set for standard human genome indexing (~32GB RAM). You can adjust the cpus and memory in this file to fit your hardware.
+The configuration is pre-set for standard human genome indexing (~32GB RAM).  
+You can adjust the cpus and memory in this file to fit your hardware.
 
 ## 🏃 How to Run
 
