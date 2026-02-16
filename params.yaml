@@ -3,7 +3,7 @@
 sra_id: "SRR22397307"
 
 # URLs for reference genome (FASTA) and annotation (GTF)
-genome_url: "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/215/GCF_000001215.4_Release_6_plus_ISO1_MT/#:~:text=GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna.gz"
+genome_url: "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/215/GCF_000001215.4_Release_6_plus_ISO1_MT/GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna.gz"
 gtf_url: "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/215/GCF_000001215.4_Release_6_plus_ISO1_MT/GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.gtf.gz"
 
 # Output directory for results
