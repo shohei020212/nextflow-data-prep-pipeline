@@ -53,7 +53,7 @@ nextflow run main.nf -params-file params.yaml
 
 Processed files are organized in the `${params.outdir}` directory:
 
-* fastq: Raw sequencing data (FASTQ)
-* fastqc: HTML quality reports
-* reference: Downloaded FASTA and GTF files
-* star_index: Generated STAR genome index
+* `fastq/`: Raw sequencing data (FASTQ)
+* `fastqc/`: HTML quality reports
+* `reference/`: Downloaded FASTA and GTF files
+* `star_index/`: Generated STAR genome index
